@@ -1,0 +1,11 @@
+CREATE TABLE conversations (
+    id INTEGER PRIMARY KEY,
+    discord_id STRING,
+    channel_id STRING,
+    message_content TEXT,
+    ryu_response TEXT,
+    timestamp DATETIME,
+    conversation_context TEXT, -- JSON: context tags
+    heaven_dm_triggered BOOLEAN,
+    emotional_tone STRING -- detected emotional tone
+);
